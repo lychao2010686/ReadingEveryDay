@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/night_model"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/firstline_setting_bg_color"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/im_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/setting_notice" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/im_night"
+                android:text="夜间模式"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/alarm_checkBox"
+                android:layout_width="68dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:button="@drawable/checkbox_selector" />
+        </RelativeLayout>
+
+        <!--
+          <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/setting_line" />
+        -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:id="@+id/check_version"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/setting_bg" >
+
+            <ImageView
+                android:id="@+id/im_check_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/check_version" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/im_check_version"
+                android:text="版本升级"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:id="@+id/send_suggest"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/setting_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/im_sendsuggest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/send_suggest" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/im_sendsuggest"
+                android:text="发送建议"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/lastline_setting_bg_color"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/im_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/about" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/im_about"
+                android:text="关于"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
